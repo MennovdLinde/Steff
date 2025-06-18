@@ -1,0 +1,89 @@
+.body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    color: #111;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+nav {
+    background-color: rgb(30, 30, 30, 0.95);
+}
+
+.navbar-large { 
+    transition: all 0.35s cubic-bezier(.68,-0.55,.27,1.55);
+    max-height: 120px;
+}
+.navbar-small {
+    transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+    max-height: 80px;
+}
+#logo img {
+    transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+    max-width: 200px;
+}
+
+.navbar-small #logo img {
+    max-width: 170px;
+}
+
+#navbar {
+  transition: margin-top 0.3s ease-in-out;
+}
+
+li {
+    font-size: 1.20rem;
+}
+
+p {
+    font-size: 1.2rem; /* standaard voor normale schermen */
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 4.6vw; /* voor telefoons: relatief groter */
+    }
+}
+
+.carousel-inner {
+    height: 65vh; /* vaste hoogte */
+}
+
+.carousel-item,
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* afbeelding schaalt zonder te vervormen, vult de ruimte */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
+    pointer-events: none;
+}
+
+
+#underbody {
+    margin-top: 120px;
+}
+
+.scrolled-down {
+    transform: translateY(-75%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+}
+
