@@ -25,7 +25,7 @@ document.getElementById("logo").addEventListener("mouseover", function () {
   }
 });
 
-fetch("home.html")
+fetch("./home.html")
   .then((response) => response.text())
   .then((html) => {
     document.getElementById("nav-home").innerHTML = html;
@@ -41,7 +41,7 @@ fetch("home.html")
     }
   });
 
-fetch("contact.html")
+fetch("./contact.html")
 .then((response) => response.text())
 .then((html) => {
   document.getElementById("nav-contact").innerHTML = html;
