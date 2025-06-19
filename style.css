@@ -61,7 +61,7 @@ p {
 .carousel-item img {
     height: 100%;
     width: 100%;
-    object-fit: cover; /* afbeelding schaalt zonder te vervormen, vult de ruimte */
+    object-fit: fill; /* afbeelding schaalt zonder te vervormen, vult de ruimte */
 }
 
 .carousel-control-prev,
