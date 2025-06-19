@@ -38,6 +38,7 @@ nav {
 
 .navbar-small #logo img {
     max-width: 170px;
+    margin-top:-20px;
 }
 
 #navbar {
@@ -50,20 +51,6 @@ li {
 
 p {
     font-size: 1.2rem; /* standaard voor normale schermen */
-}
-
-@media (max-width: 768px) {
-    p {
-        font-size: 4.6vw; /* voor telefoons: relatief groter */
-    }
-
-    .navbar-small #logo img {
-        max-width: 110px;
-    }
-
-    .carousel-inner {
-        height: 40vh; /* vaste hoogte */
-    }
 }
 
 .carousel-inner {
