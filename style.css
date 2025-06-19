@@ -56,6 +56,14 @@ p {
     p {
         font-size: 4.6vw; /* voor telefoons: relatief groter */
     }
+
+    .navbar-small #logo img {
+        max-width: 110px;
+    }
+
+    .carousel-inner {
+        height: 40vh; /* vaste hoogte */
+    }
 }
 
 .carousel-inner {
