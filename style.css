@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'FontGroot';
-    src: url(Fonts/Demo_Fonts/Demo_Fonts/);
+    src: url('Fonts/Demo_Fonts/Demo_Fonts/Fontspring-DEMO-span-semibold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'FontKlein';
-    src: url(Fonts/cofo-gothic-font-family-1750307492-0/cofo-gothic-font-family-1750307492-0/);
+    src: url('Fonts/cofo-gothic-font-family-1750307492-0/cofo-gothic-font-family-1750307492-0/CoFoGothic-Regular-Trial.otf') format('opentype');
 }
 
 body {
