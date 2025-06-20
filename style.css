@@ -1,17 +1,18 @@
-.body {
-    font-family: 'Inter', sans-serif;
+@font-face {
+    font-family: 'FontGroot';
+    src: url(Fonts/Demo_Fonts/Demo_Fonts/);
+}
+
+@font-face {
+    font-family: 'FontKlein';
+    src: url(Fonts/cofo-gothic-font-family-1750307492-0/cofo-gothic-font-family-1750307492-0/);
+}
+
+body {
     overflow-y: scroll;
+    overflow-x: none;
     overflow-x: hidden;
-}
-
-h1, h2, h3 {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-}
-
-h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    background-color: black;
 }
 
 ::-webkit-scrollbar {
@@ -19,70 +20,80 @@ h4, h5, h6 {
     background: transparent;
 }
 
-nav {
-    background-color: rgb(30, 30, 30, 0.95);
+#header{
+    height: 90vh;
+    width: 100%;
 }
 
-.navbar-large { 
-    transition: all 0.35s cubic-bezier(.68,-0.55,.27,1.55);
-    max-height: 120px;
-}
-.navbar-small {
-    transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
-    max-height: 80px;
-}
-#logo img {
-    transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
-    max-width: 200px;
+#header img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
-.navbar-small #logo img {
-    max-width: 170px;
-    margin-top:-20px;
+#row{
+    height: fit-content;
 }
 
-#navbar {
-  transition: margin-top 0.3s ease-in-out;
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-family: FontGroot;
 }
 
-li {
-    font-size: 1.20rem;
+h3 {
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-size: clamp(1.1em, 1.8vw, 2.5em);
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
 }
 
 p {
-    font-size: 1.2rem; /* standaard voor normale schermen */
+    font-family: FontKlein;
+    font-size: clamp(0.9em, 1.4vw, 1.2em);
 }
 
-.carousel-inner {
-    height: 60vh; /* vaste hoogte */
+#card,
+#card-big,
+#card-small,
+#card-mob {
+    border-radius: 0px;
+    border: none;
+    overflow-y: auto;
 }
 
-.carousel-item,
-.carousel-item img {
-    height: 100%;
+#card-big img {
+    height: 80vh;
     width: 100%;
-    object-fit: cover; /* afbeelding schaalt zonder te vervormen, vult de ruimte */
+    object-fit: cover;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    display: none !important;
-    pointer-events: none;
+#card img {
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
 }
 
-
-#underbody {
-    margin-top: 120px;
+#card-mob img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
 }
 
-.scrolled-down {
-    transform: translateY(-75%);
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+#card-small img {
+    height: 50vh;
+    width: 49%;
+    object-fit: cover;
 }
 
-.scrolled-up {
-    transform: translateY(0);
-    transition: all 0.2s ease-in-out;
+footer {
+    background-color: black;
 }
-
