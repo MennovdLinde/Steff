@@ -9,3 +9,16 @@ window.addEventListener("scroll", function () {
         logoBar.classList.remove("logo-small");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleFormBtn");
+    const form = document.getElementById("contactForm");
+
+    toggleBtn.addEventListener("click", function () {
+        if (form.classList.contains("show")) {
+            form.classList.remove("show");
+        } else {
+            form.classList.add("show");
+        }
+    });
+});
