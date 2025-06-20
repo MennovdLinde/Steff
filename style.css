@@ -21,8 +21,16 @@ body {
 }
 
 #header{
-    height: 90vh;
+    height: 80vh;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    #header {
+        height: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 #header img {
