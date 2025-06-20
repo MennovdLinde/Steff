@@ -271,18 +271,21 @@
                     <div class="col-md-8 text-center">
                         <button id="toggleFormBtn" class="btn btn-dark mb-3">CONTACT</button>
 
-                        <form id="contactForm" class="contact-form">
+                        <form action="https://formsubmit.co/info@steffevents.nl" method="POST" class="contact-form">
+                            <input type="hidden" name="_captcha" value="false">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Naam" required>
+                                <input type="text" class="form-control" name="naam" placeholder="Naam" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email" required>
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Bericht" required></textarea>
+                                <textarea class="form-control" name="bericht" rows="4" placeholder="Bericht"
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-dark mb-3">Verstuur</button>
                         </form>
+
                     </div>
                 </div>
 
