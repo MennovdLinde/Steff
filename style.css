@@ -67,6 +67,7 @@ body {
 
 #row{
     height: fit-content;
+    position: relative;
 }
 
 h1,
@@ -142,4 +143,36 @@ p {
 
 footer {
     background-color: black;
+}
+
+#wijn {
+    position: absolute;
+    height: 140px;
+    bottom: 50px;
+    right: -600px;
+    z-index: 200;
+}
+
+#ink {
+    position: absolute;
+    height: 120px;
+    bottom: 0px;
+    right: -180px;
+    z-index: 200;
+}
+
+#cheers {
+    position: absolute;
+    height: 120px;
+    bottom: 0;
+    left: -230px;
+    z-index: 200;
+}
+
+#wijn img,
+#ink img,
+#cheers img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
