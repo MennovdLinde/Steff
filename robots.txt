@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://steffevents.nl/sitemap.xml
