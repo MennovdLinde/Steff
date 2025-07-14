@@ -25,12 +25,6 @@ body {
     width: 100%;
 }
 
-@media (max-width: 800px) {
-    #header {
-        height: 60vh;
-    }
-}
-
 #header img {
     height: 100%;
     width: 100%;
@@ -145,27 +139,16 @@ footer {
     background-color: black;
 }
 
-#wijn {
-    position: absolute;
-    height: 140px;
-    bottom: 50px;
-    right: -600px;
-    z-index: 200;
+@media (max-width: 800px) {
+    #header {
+        height: 60vh;
+    }
 }
 
-#ink {
-    position: absolute;
-    height: 120px;
-    bottom: 0px;
-    right: -180px;
-    z-index: 200;
-}
-
+#wijn,
+#ink,
 #cheers {
     position: absolute;
-    height: 120px;
-    bottom: 0;
-    left: -230px;
     z-index: 200;
 }
 
@@ -174,5 +157,53 @@ footer {
 #cheers img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
+}
+
+#wijn {
+    height: 140px;
+    bottom: 50px;
+    right : -590px;
+}
+
+#ink {
+    height: 120px;
+    bottom: 0px;
+    right: -180px;
+}
+
+#cheers {
+    height: 120px;
+    bottom: 0;
+    left: -230px;
+}
+
+#wijn-mob,
+#ink-mob,
+#cheers-mob {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    z-index: 200;
+}
+
+#wijn-mob {
+    top: 270px;
+}
+
+#ink-mob {
+    bottom: 360px;
+}
+
+#cheers-mob {
+    bottom: 400px;
+}
+
+#wijn-mob img,
+#ink-mob img,
+#cheers-mob img {
+    height: 30%;
+    width: 30%;
     object-fit: contain;
 }
